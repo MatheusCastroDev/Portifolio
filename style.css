@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.5s;
+}
+
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.light-mode .card {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border-color: #ffffff !important;
+}
+
+/* Animação do delay nos elementos ao scrollar*/
+
+.revelar {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.revelar.ativo {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Cores do Light Mode*/
+body.light-mode,
+body.light-mode p,
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode h3,
+body.light-mode h4,
+body.light-mode h5,
+body.light-mode h6,
+body.light-mode span:not(.badge),
+body.light-mode .text-light {
+    color: #121212 !important;
+}
+
+body.light-mode .border,
+body.light-mode .border-primary,
+body.light-mode .border-secondary,
+body.light-mode .card,
+body.light-mode #modal_contato,
+body.light-mode .trilho,
+body.light-mode a {
+    border-color: #0d6efd !important; /* Mantém a borda azul destacada */
+}
+
+/* Força a cor visível nos ícones no Modo Claro */
+body.light-mode .bi {
+    color: #0d6efd !important; /* Cor azul do Bootstrap */
+}
+
+#conteiner {
+    background: rgb(58, 58, 58);
+    text-align: center;
+    border: 2px solid;
+    border-image: linear-gradient(to right, rgb(0, 132, 255), rgb(255, 255, 255)) 1;
+}
+
+
+
+.navbar-nav .nav-link{
+color: #ffffff;
+transition: color 0.5s ease;
+font-size: 1.2rem;
+}
+
+.navbar-nav .nav-link:hover{
+
+color: #0084ff;
+
+}
+
+
+#title {
+    color: white;
+    border-bottom: rgb(0, 132, 255) solid 2px;
+    border-image: linear-gradient(to right, rgb(0, 132, 255), rgb(255, 255, 255)) 1;
+}
+
+
+.trilho {
+    width: 80px; 
+    height: 30px;
+    background-color: rgb(245, 242, 242);
+    border-radius: 150px;
+    position: relative;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: background-color 0.4s ease, border-color 0.4s ease;
+}
+
+
+.indicador {
+    width: 22px;
+    height: 22px;
+    background-color: #0d6efd;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 12px;
+    transition: transform 0.4s ease, background-color 0.4s ease;
+}
+
+.trilho .indicador {
+    width: 24px;
+    height: 24px;
+    background-color: #201f1f;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), background-color 0.3s ease;
+}
+
+
+body.light-mode .trilho{
+    background-color: #201f1f;
+    color: #ffffff;
+    border: solid black 1px;
+}
+
+body.light-mode .indicador{
+    transform: translatex(48px);
+    background-color: #fffefe;
+}
+
+body.dark-mode .trilho{
+    background-color: #020202;
+    color: #ffffff;
+    border: solid black 1px;
+}
+
+
+#title2 {
+    border-bottom: rgb(0, 132, 255) solid 2px;
+    border-image: linear-gradient(to right, rgb(0, 132, 255), rgb(255, 255, 255)) 1;
+}
+
+
+#skills .card{
+
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+#skills .card:hover{
+    transform: translateY(-5px);
+    border-color: #ffffff !important;
+}
+
+.cor-php,
+body.light-mode h6.cor-php{
+    color: rebeccapurple !important;
+}
+
+.cor-c,
+body.light-mode h6.cor-c{
+    color: rgb(126, 2, 250) !important;
+}
+
+.cor-har,
+body.light-mode h6.cor-har{
+    color: rgb(211, 49, 49) !important;
+}
+
+/*Cor do Py*/
+
+.cor-py {
+    color: #3776ab !important; /* Azul oficial */
+}
+
+.cor-py-2 {
+    color: #ffd43b !important; /* Amarelo oficial */
+}
+
+/*Cores da palavra Python*/
+
+body.light-mode .cor-py,
+body.light-mode h6 .cor-py {
+    color: #0d6efd !important; /* Azul com bom contraste */
+}
+
+body.light-mode .cor-py-2,
+body.light-mode h6 .cor-py-2 {
+    color: #b58900 !important; /* Dourado escuro visível no branco */
+}
+
+
+.cor-s,
+body.light-mode h6.cor-s{
+    color: rgb(2, 250, 43) !important;
+}
+
+.cor-o,
+body.light-mode h6.cor-o{
+    color: rgb(2, 250, 176) !important;
+}
+
+.cor-f,
+body.light-mode h6.cor-f{
+    color: #f24e1e !important;
+}
+
+.cor-j,
+body.light-mode h6.cor-j{
+    color: rgb(221, 224, 7) !important;
+}
+
+.cor-a,
+body.light-mode h6.cor-a{
+    color: #0d6efd !important;
+}
+
+
+body.light-mode #btn_git,
+body.light-mode .btn {
+    background-image: none !important;
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    border: 2px solid #0d6efd !important;
+}
+
+/* Efeito ao passar o mouse */
+body.light-mode #btn_git:hover,
+body.light-mode .btn:hover {
+    background-image: none !important;
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+.btn {
+
+    padding: 8px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #0084ff;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-image:
+        linear-gradient(#121212, #121212),
+        linear-gradient(to right, #0084ff, #ffffff);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+        transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn:hover {
+
+    color: #ffffff;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.25);
+    border-color: #ffffff;
+
+}
+
+.btn:hover::before {
+    opacity: 0;
+}
+
+.btn.light-mode{
+    background-color: #ffffff;
+}
+
+#modal_contato{
+
+  background-color: #121212;
+  max-width: 1000px;
+  width: 95vw;
+  margin: auto;
+ box-sizing: border-box;
+ 
+}
+
+
+#modal_contato::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+}
+
+.hover-card {
+    transition: transform 0.2s ease, border-color 0.2s ease
+}
+
+.hover-card:hover{
+    transform: translateY(4px);
+    border-color: #ffffff !important;;
+}
+
+
+#tel {
+    color: #ffffff;
+}
+
+#email{
+    color: #ffffff;
+}
+
+#fechar_modal {
+
+    margin-top: 20%;
+}
+
+#insta {
+
+    color: #ffffff;
+}
+
+body.light-mode #modal_contato,
+body.light-mode #modal_contato a,
+body.light-mode #modal_contato small,
+body.light-mode #modal_contato span,
+body.light-mode #modal_contato p,
+body.light-mode #modal_contato .hover-card {
+    color: #ffffff !important;
+}
+
+body.light-mode #modal_contato #fechar_modal {
+    color: #ffffff !important;
+    border-color: #0d6efd !important;
+}
+
+body.light-mode #modal_contato #fechar_modal:hover{
+    color: #000000 !important;
+    background-color: #ffffff;
+    border-color: #0d6efd !important;
+
+}
+
+
+#rodape{
+    background-color: #121212
+}

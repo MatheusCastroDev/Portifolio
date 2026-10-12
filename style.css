@@ -60,12 +60,14 @@ body.light-mode .card,
 body.light-mode #modal_contato,
 body.light-mode .trilho,
 body.light-mode a {
-    border-color: #0d6efd !important; /* Mantém a borda azul destacada */
+    border-color: #0d6efd !important;
+    /* Mantém a borda azul destacada */
 }
 
 /* Força a cor visível nos ícones no Modo Claro */
 body.light-mode .bi {
-    color: #0d6efd !important; /* Cor azul do Bootstrap */
+    color: #0d6efd !important;
+    /* Cor azul do Bootstrap */
 }
 
 #conteiner {
@@ -75,17 +77,19 @@ body.light-mode .bi {
     border-image: linear-gradient(to right, rgb(0, 132, 255), rgb(255, 255, 255)) 1;
 }
 
-
-
-.navbar-nav .nav-link{
-color: #ffffff;
-transition: color 0.5s ease;
-font-size: 1.2rem;
+#foto_port{
+    border-radius: 100px;
 }
 
-.navbar-nav .nav-link:hover{
+.navbar-nav .nav-link {
+    color: #ffffff;
+    transition: color 0.5s ease;
+    font-size: 1.2rem;
+}
 
-color: #0084ff;
+.navbar-nav .nav-link:hover {
+
+    color: #0084ff;
 
 }
 
@@ -98,7 +102,7 @@ color: #0084ff;
 
 
 .trilho {
-    width: 80px; 
+    width: 80px;
     height: 30px;
     background-color: rgb(245, 242, 242);
     border-radius: 150px;
@@ -137,18 +141,18 @@ color: #0084ff;
 }
 
 
-body.light-mode .trilho{
+body.light-mode .trilho {
     background-color: #201f1f;
     color: #ffffff;
     border: solid black 1px;
 }
 
-body.light-mode .indicador{
+body.light-mode .indicador {
     transform: translatex(48px);
     background-color: #fffefe;
 }
 
-body.dark-mode .trilho{
+body.dark-mode .trilho {
     background-color: #020202;
     color: #ffffff;
     border: solid black 1px;
@@ -161,76 +165,80 @@ body.dark-mode .trilho{
 }
 
 
-#skills .card{
+#skills .card {
 
     transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
-#skills .card:hover{
+#skills .card:hover {
     transform: translateY(-5px);
     border-color: #ffffff !important;
 }
 
 .cor-php,
-body.light-mode h6.cor-php{
+body.light-mode h6.cor-php {
     color: rebeccapurple !important;
 }
 
 .cor-c,
-body.light-mode h6.cor-c{
+body.light-mode h6.cor-c {
     color: rgb(126, 2, 250) !important;
 }
 
 .cor-har,
-body.light-mode h6.cor-har{
+body.light-mode h6.cor-har {
     color: rgb(211, 49, 49) !important;
 }
 
 /*Cor do Py*/
 
 .cor-py {
-    color: #3776ab !important; /* Azul oficial */
+    color: #3776ab !important;
+    /* Azul oficial */
 }
 
 .cor-py-2 {
-    color: #ffd43b !important; /* Amarelo oficial */
+    color: #ffd43b !important;
+    /* Amarelo oficial */
 }
 
 /*Cores da palavra Python*/
 
 body.light-mode .cor-py,
 body.light-mode h6 .cor-py {
-    color: #0d6efd !important; /* Azul com bom contraste */
+    color: #0d6efd !important;
+    /* Azul com bom contraste */
 }
 
 body.light-mode .cor-py-2,
 body.light-mode h6 .cor-py-2 {
-    color: #b58900 !important; /* Dourado escuro visível no branco */
+    color: #b58900 !important;
+    /* Dourado escuro visível no branco */
 }
 
 
 .cor-s,
-body.light-mode h6.cor-s{
+body.light-mode h6.cor-s {
     color: rgb(2, 250, 43) !important;
 }
 
 .cor-o,
-body.light-mode h6.cor-o{
+body.light-mode h6.cor-o {
     color: rgb(2, 250, 176) !important;
 }
 
 .cor-f,
-body.light-mode h6.cor-f{
+body.light-mode h6.cor-f {
     color: #f24e1e !important;
 }
 
 .cor-j,
-body.light-mode h6.cor-j{
+body.light-mode h6.cor-j {
     color: rgb(221, 224, 7) !important;
 }
 
 .cor-a,
-body.light-mode h6.cor-a{
+body.light-mode h6.cor-a {
     color: #0d6efd !important;
 }
 
@@ -302,33 +310,34 @@ body.light-mode .btn:hover {
     opacity: 0;
 }
 
-.btn.light-mode{
+.btn.light-mode {
     background-color: #ffffff;
 }
 
-#modal_contato{
+#modal_contato {
 
-  background-color: #121212;
-  max-width: 1000px;
-  width: 95vw;
-  margin: auto;
- box-sizing: border-box;
- 
+    background-color: #121212;
+    max-width: 1000px;
+    width: 95vw;
+    margin: auto;
+    box-sizing: border-box;
+
 }
 
 
 #modal_contato::backdrop {
-  background-color: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
 }
 
 .hover-card {
     transition: transform 0.2s ease, border-color 0.2s ease
 }
 
-.hover-card:hover{
+.hover-card:hover {
     transform: translateY(4px);
-    border-color: #ffffff !important;;
+    border-color: #ffffff !important;
+    ;
 }
 
 
@@ -336,7 +345,7 @@ body.light-mode .btn:hover {
     color: #ffffff;
 }
 
-#email{
+#email {
     color: #ffffff;
 }
 
@@ -364,7 +373,7 @@ body.light-mode #modal_contato #fechar_modal {
     border-color: #0d6efd !important;
 }
 
-body.light-mode #modal_contato #fechar_modal:hover{
+body.light-mode #modal_contato #fechar_modal:hover {
     color: #000000 !important;
     background-color: #ffffff;
     border-color: #0d6efd !important;
@@ -372,6 +381,6 @@ body.light-mode #modal_contato #fechar_modal:hover{
 }
 
 
-#rodape{
+#rodape {
     background-color: #121212
 }
